@@ -63,7 +63,7 @@ const Play = () => {
       setWaiting(false)
     })
 
-    newSocket.on('waitingForOpponent', (data) => {
+    newSocket.on('waitingForOpponent', () => {
       console.log('⏳ รอฝ่ายตรงข้ามเลือก...')
       if (myChoice) {
         setWaiting(true)
