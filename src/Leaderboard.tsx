@@ -22,7 +22,7 @@ const Leaderboard = () => {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const SERVER_URL = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000'
+        const SERVER_URL = process.env.REACT_APP_SERVER_URL || 'https://rock-paper-scissors-server.vercel.app/'
         const response = await fetch(`${SERVER_URL}/api/leaderboard`)
         const data = await response.json()
 

@@ -35,7 +35,7 @@ const Play = () => {
 
   // Socket.io Connection
   useEffect(() => {
-    const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000'
+    const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'https://rock-paper-scissors-server.vercel.app/'
     
     const newSocket = io(SERVER_URL, {
       reconnection: true,
